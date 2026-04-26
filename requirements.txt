@@ -1,0 +1,38 @@
+# Recommended Python version: 3.10
+#
+# This file is a practical single-env setup for the Python side of the
+# full pipeline in this repository:
+# - dataset preprocessing
+# - model training / export
+# - ONNX inference helpers
+# - quantization notebooks
+# - deployment helper scripts
+#
+# Notes:
+# 1. ESP-IDF and ESP-DL are NOT pip packages. Install them separately.
+# 2. For quantization, this project follows Espressif's ESP-PPQ workflow.
+#    If `pip install ppq==0.1` does not expose `ppq.api.espdl_quantize_onnx`
+#    in your environment, install Espressif's esp-ppq repo manually instead.
+
+numpy
+scipy
+pandas
+pillow
+opencv-python
+matplotlib
+tqdm
+scikit-learn
+
+torch
+torchvision
+torchsummary
+import-ipynb
+
+onnx
+onnxruntime
+onnxsim
+
+tensorflow
+protobuf
+
+# ppq==0.1
