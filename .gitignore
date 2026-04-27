@@ -20,3 +20,6 @@ __pycache__/
 
 # Pickle Dataset
 *.pkl
+
+# Dataset
+/dataset/leapGestRecog
