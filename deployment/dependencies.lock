@@ -1,0 +1,21 @@
+dependencies:
+  espressif/esp-dl:
+    dependencies:
+    - name: idf
+      version: '>=5.3'
+    source:
+      path: /Users/doanvankhoan/esp/esp-dl/esp-dl
+      type: local
+    targets:
+    - esp32s3
+    - esp32p4
+    version: 3.0.0~1-rc.1
+  idf:
+    source:
+      type: idf
+    version: 5.3.1
+direct_dependencies:
+- espressif/esp-dl
+manifest_hash: 28ed9664e0cb7a77965f1c7d9f332e7739f25eabfeda33990a40ee6b8e7b2ef6
+target: esp32s3
+version: 2.0.0

@@ -19,7 +19,8 @@ message("PROJECT_DIR: ${PROJECT_DIR}")
 set(MVMODEL_EXE ${PROJECT_DIR}/pack_model.py)
 idf_build_get_property(build_dir BUILD_DIR)
 set(image_file ${build_dir}/espdl_models/models.espdl)
-set(MODEL_FILE_PATH ${PROJECT_DIR}/${CONFIG_MODEL_FILE_PATH})
+# set(MODEL_FILE_PATH ${PROJECT_DIR}/${CONFIG_MODEL_FILE_PATH})
+set(MODEL_FILE_PATH ${PROJECT_DIR}/model/gesture_model_int8.espdl)
 
 add_custom_command(
     OUTPUT ${image_file}

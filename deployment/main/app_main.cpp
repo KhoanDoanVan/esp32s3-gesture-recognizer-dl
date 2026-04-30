@@ -16,7 +16,7 @@ const char* GESTURE_LABELS[] = {
 const int NUM_CLASSES = 8;
 
 
-TensorBase* prepare prepare_input_tensor() {
+TensorBase* prepare_input_tensor() {
     // from test_image.hpp
     // int8
     TensorBase* input_tensor = new TensorBase(
@@ -70,7 +70,7 @@ void print_confidences(TensorBase* output_tensor) {
 }
 
 
-extern "C" voi app_main(void)
+extern "C" void app_main(void)
 {
     ESP_LOGI(TAG, "Starting gesture recognition...");
 

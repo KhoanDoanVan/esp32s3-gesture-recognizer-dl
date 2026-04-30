@@ -65,10 +65,10 @@ def main():
         data = process_image(args.image_path)
         
         # Ensure model directory exists
-        os.makedirs('deployment/image_int8_converted', exist_ok=True)
+        os.makedirs('deployment/model', exist_ok=True)
         
         # Generate header file
-        output_path = os.path.join('deployment/image_int8_converted', 'test_image_converted.hpp')
+        output_path = os.path.join('deployment/model', 'test_image_converted.hpp')
         generate_header(data, output_path)
         
         print(f"Successfully generated header file: {output_path}")

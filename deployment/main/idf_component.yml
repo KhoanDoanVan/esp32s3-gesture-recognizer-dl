@@ -1,4 +1,4 @@
 dependencies:
   espressif/esp-dl:
     version: "^3.0.0-rc.1"
-    override_path: ""
+    override_path: "${HOME}/esp/esp-dl/esp-dl"
